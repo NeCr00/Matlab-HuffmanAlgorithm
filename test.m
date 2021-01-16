@@ -13,12 +13,16 @@ function [] = test()
 %  
 %  prob = EstimateProb()
 % 
-%  disp(prob);
-% [chars,probs,alphabet] = SourceA (2,100)
+
+ [chars,probs,alphabet] = SourceA (2,100)
 % 
-% dict = Huffmandictionary(alphabet,probs);
+ dict = Huffmandictionary(alphabet,probs);
 % disp(dict.codewords)
 
-chars = SourceB(2);
-probs = EstimateProb(2,chars);
+ enco = Huffmanencoding("aabb",dict,2);
+ disp(enco)
+ 
+%chars = SourceB(2);
+%probs = EstimateProb(2,chars);
 
+%'1011000' 

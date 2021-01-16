@@ -1,5 +1,5 @@
 function enco = Huffmanencoding(sig,dict)
-    
+
    enco = ''; % Empty encoded signal (char).
     while( ~isempty(sig) ) % Loop for each signal value.
         tempcode = ''; % Empty signal value (char).

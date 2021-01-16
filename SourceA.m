@@ -5,7 +5,8 @@ prob = [.08167 .01492 .02782 .04253 .12702 .02228 .02015 .06094 .06966 .00153 .0
 index =[1:26];
 chars = [];
 
-
+type =2 
+num =20
 
 
 if type ==1
@@ -50,6 +51,18 @@ if type ==1
         chars = [chars,new_alphabet(index_)];
     end
     alphabet = new_alphabet
+    
+   dict = Huffmandictionary(alphabet,prob);
+   enco = [];
+    for i=1:length(chars)
+        
+        temp = Huffmanencoding(chars(i),dict);
+        enco = [enco,temp];
+    end
+    
+    deco = Huffmandecoding(enco,dict);
+    disp(deco)
+end
 end
 
 
