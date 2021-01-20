@@ -11,9 +11,9 @@ function enco = Huffmanencoding(sig,dict)
                  break;
              end
         end
-        if isempty(tempcode) % Error checking.
-            error('The Huffman dictionary provided does not have the codes for all the input signals.');
-        end        
+%         if isempty(tempcode) % Error checking.
+%             error('The Huffman dictionary provided does not have the codes for all the input signals.');
+%         end        
         enco = strcat( enco,tempcode ); % Append the code to the encryption message.
         sig = sig(2:end); % Update the signal vector.
       

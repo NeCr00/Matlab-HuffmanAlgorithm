@@ -22,8 +22,8 @@ function deco = Huffmandecoding( sig, dict  )
                 break;
             end        
         end
-        %deco = [deco ,dictb.symbol];
-       deco =  strcat( deco,dictb.symbol );
+        deco = [deco ,dictb.symbol];
+       deco strcat( enco,tempcode );
         % Append char to decoded signal.
     end
   

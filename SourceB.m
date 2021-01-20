@@ -17,8 +17,8 @@ if type == 2
     end
     
     chars = new_alphabet;
-   
+    
 end
- 
+
 end
 
